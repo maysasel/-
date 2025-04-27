@@ -40,3 +40,22 @@
   font-size: 17px;
   color: #666;
 }
+/* حركة ظهور النص */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* حركة الزر عند المرور عليه */
+button:hover {
+  background-color: #4CAF50; /* تقدرين تغيرين اللون حسب ثيمك */
+  color: white;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
